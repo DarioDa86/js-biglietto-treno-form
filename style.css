@@ -5,5 +5,36 @@
 }
 
 body {
-    background-color: cornflowerblue;
+    background-color: rgb(123, 202, 4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.big-container {
+    width: 80%;
+    margin: auto;
+}
+
+.form-biglietto, .totale-biglietto {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+    margin-top: 30px;
+}
+
+label, button {
+    margin-left: 20px;
+}
+
+.btn-form {
+    margin-top: 20px;
+}
+
+.totale-biglietto {
+    display: none;
+}
+
+.totale-biglietto.mostra {
+    display: block;
 }
