@@ -11,16 +11,30 @@ body {
 
 .big-container {
     width: 80%;
-    margin: auto;
+    margin: 20px auto;
+}
+
+.big-container h2, .big-container .form-biglietto {
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+}
+
+.form-biglietto {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
 }
 
 .form-biglietto, .totale-biglietto {
     background-color: #fff;
     padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
-    margin-top: 30px;
+    margin: 30px 0;
+}
+
+.totale-biglietto {
+    border-radius: none;
 }
 
 label, button {
@@ -37,4 +51,30 @@ label, button {
 
 .totale-biglietto.mostra {
     display: block;
+}
+
+.dati-container {
+    display: flex;
+    /* justify-content: space-around; */
+    border: 1px solid grey;
+}
+
+h3 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.col-1 {
+    background-color: gray;
+    font-weight: 700;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5 {
+    margin-right: 20px;
+    padding: 15px;
+}
+
+.dato-fisso {
+    font-weight: 700;
+    margin-bottom: 50px;
 }

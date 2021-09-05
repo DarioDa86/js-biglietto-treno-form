@@ -10,12 +10,13 @@
 <body>
     <!-- Inizio Form -->
     <div class="big-container">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
         <div class="form-biglietto">
             <label for="nome"> Nome Cognome</label>
             <input type="text" name="nome" id="nome" placeholder="Inserisci il tuo nome">
 
             <label for="km"> Km da percorrere</label>
-            <input type="number" name="km" id="km" placeholder="Inserisci i km del viaggio">
+            <input type="number" name="km" id="km" placeholder="Inserisci i km">
 
             <label for="anni"> Età</label>
             <select name="anni" id="anni">
@@ -33,13 +34,34 @@
     <!-- /Fine Form -->
 
     <!-- Inizio Risultato biglietto -->
+        <h2>IL TUO BIGLIETTO</h2>
         <div id="totale-biglietto" class="totale-biglietto">
-            <div id="dati-passeggero"></div>
-            <div id="tipo-offerta"></div>
-            <div id="costo-biglietto"></div>
-            <div id="num-carrozza"></div>
-            <div id="codice-cp"></div>
-
+            <h3>DETTAGLI PASSEGGERO</h2>
+            <div class="dati-container">
+                <div class="col-1">
+                    <h3>NOME PASSEGGERO</h3>
+                    <h3 id="dati-passeggero"></h3>
+                </div>
+                <div class="col-2">
+                    <div class="dato-fisso">Offerta</div>
+                    <div id="tipo-offerta"></div>
+                </div>
+                <div class="col-3">
+                    <div class="dato-fisso">Prezzo del biglietto</div>
+                    <div id="costo-biglietto"></div>
+                </div>
+                <div class="col-4">
+                    <div class="dato-fisso">Numero CP</div>
+                    <div id="codice-cp"></div>
+                </div>
+                <div class="col-5">
+                    <div class="dato-fisso">Numero carrozza</div>
+                    <div id="num-carrozza"></div>
+                </div>
+                
+            </div>
+            <div class="dati-nuovi">
+            </div>
         </div>
     <!-- /Fine Risultato biglietto -->
     
